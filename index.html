@@ -1,104 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Expenzo — Hire & Work</title>
-  <style>
-    body {
-      margin:0;
-      font-family: Arial, sans-serif;
-      background:#f9fafb;
-      color:#222;
-      line-height:1.5;
-    }
-    header {
-      background:#2563eb;
-      color:white;
-      padding:15px 20px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
-    header a {
-      color:white;
-      text-decoration:none;
-      margin-left:15px;
-      font-weight:bold;
-    }
-    .hero {
-      background:#e0ebff;
-      padding:40px 20px;
-      text-align:center;
-    }
-    .hero h1 {
-      font-size:28px;
-      margin-bottom:10px;
-    }
-    .hero p {
-      font-size:16px;
-      color:#333;
-    }
-    .container {
-      max-width:900px;
-      margin:20px auto;
-      padding:0 15px;
-    }
-    .features {
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:15px;
-    }
-    .feature-box {
-      background:white;
-      padding:15px;
-      border-radius:8px;
-      box-shadow:0 2px 5px rgba(0,0,0,0.1);
-      text-align:center;
-    }
-    footer {
-      text-align:center;
-      padding:15px;
-      margin-top:30px;
-      background:#eee;
-      font-size:14px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickHire - Jobs</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div><strong>Expenzo</strong></div>
+    <div class="logo">QuickHire</div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="jobs.html">Jobs</a>
+      <a href="jobs.html" class="active">Jobs</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
-  <div class="hero">
-    <h1>Hire & Work Made Simple</h1>
-    <p>Find temporary jobs or hire trusted workers near you.</p>
-  </div>
+  <main>
+    <section class="hero small-hero">
+      <h1>Available Jobs</h1>
+      <p>Browse temporary jobs posted by contractors near you.</p>
+    </section>
 
-  <div class="container">
-    <h2>Why Choose Expenzo?</h2>
-    <div class="features">
-      <div class="feature-box">
-        <h3>Easy Registration</h3>
-        <p>Workers and employers can sign up in minutes.</p>
+    <section class="job-list">
+      <div class="job-card">
+        <h2>Construction Helper</h2>
+        <p><strong>Location:</strong> Mumbai</p>
+        <p><strong>Pay:</strong> ₹500/day</p>
+        <button>Apply Now</button>
       </div>
-      <div class="feature-box">
-        <h3>Transparent Pricing</h3>
-        <p>Daily wage clearly listed for every job.</p>
+
+      <div class="job-card">
+        <h2>Painter</h2>
+        <p><strong>Location:</strong> Pune</p>
+        <p><strong>Pay:</strong> ₹600/day</p>
+        <button>Apply Now</button>
       </div>
-      <div class="feature-box">
-        <h3>Local Opportunities</h3>
-        <p>Find jobs and workers available in your city.</p>
+
+      <div class="job-card">
+        <h2>Electrician</h2>
+        <p><strong>Location:</strong> Nashik</p>
+        <p><strong>Pay:</strong> ₹700/day</p>
+        <button>Apply Now</button>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <footer>
-    © Expenzo — Connecting Workers and Employers
+    <p>© 2025 QuickHire. All rights reserved.</p>
   </footer>
 </body>
 </html>
