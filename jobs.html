@@ -1,98 +1,68 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Expenzo — Job Listings</title>
-  <style>
-    body {
-      margin:0;
-      font-family: Arial, sans-serif;
-      background:#f4f6f9;
-      color:#222;
-      line-height:1.5;
-    }
-    header {
-      background:#2563eb;
-      color:white;
-      padding:15px 20px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
-    header a {
-      color:white;
-      text-decoration:none;
-      margin-left:15px;
-      font-weight:bold;
-    }
-    .container {
-      max-width:900px;
-      margin:20px auto;
-      padding:0 15px;
-    }
-    h1 {
-      margin-bottom:20px;
-      font-size:24px;
-    }
-    .job-card {
-      background:white;
-      padding:15px;
-      border-radius:8px;
-      box-shadow:0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom:15px;
-    }
-    .job-card h3 {
-      margin:0 0 8px;
-    }
-    .job-info {
-      font-size:14px;
-      color:#555;
-    }
-    footer {
-      text-align:center;
-      padding:15px;
-      margin-top:30px;
-      background:#eee;
-      font-size:14px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div><strong>Expenzo</strong></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="jobs.html">Jobs</a>
-    </nav>
-  </header>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
 
-  <div class="container">
-    <h1>Available Jobs</h1>
+header {
+  background: #004aad;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    <div class="job-card">
-      <h3>Construction Helper</h3>
-      <div class="job-info">Daily Wage: ₹800 | Location: Mumbai</div>
-    </div>
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
 
-    <div class="job-card">
-      <h3>House Painter</h3>
-      <div class="job-info">Daily Wage: ₹1000 | Location: Pune</div>
-    </div>
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
 
-    <div class="job-card">
-      <h3>Electrician</h3>
-      <div class="job-info">Daily Wage: ₹1200 | Location: Delhi</div>
-    </div>
+nav a.active {
+  text-decoration: underline;
+}
 
-    <div class="job-card">
-      <h3>Plumber</h3>
-      <div class="job-info">Daily Wage: ₹900 | Location: Nashik</div>
-    </div>
-  </div>
+.hero {
+  padding: 40px;
+  text-align: center;
+  background: #e6f0ff;
+}
 
-  <footer>
-    © Expenzo — Simple Job Hiring Platform
-  </footer>
-</body>
-</html>
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.job-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+  background: #004aad;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
